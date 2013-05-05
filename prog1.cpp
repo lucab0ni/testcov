@@ -1,4 +1,5 @@
 #include <iostream>
+#include "hop.h"
 
 void f()
 {
@@ -8,5 +9,9 @@ void f()
 int main()
 {
   std::cout << "Hello World"<<std::endl;
+
+  f();
+  g();
+
   return 0;
 }
