@@ -10,5 +10,4 @@ script:
   - cmake . && make && ./prog1
 
 after_success:
-  - coveralls --verbose
-
+  - coveralls --verbose --exclude CMakeFiles
