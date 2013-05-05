@@ -7,3 +7,7 @@ build/*
 
 
 .gitignore~
+
+.#CMakeLists.txt
+
+*.yml~
