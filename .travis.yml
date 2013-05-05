@@ -1,0 +1,14 @@
+language: cpp
+
+compiler:
+  - gcc
+
+before_install:
+  - sudo pip install cpp-coveralls --use-mirrors
+
+script:
+  - cmake . && make && ./prog1
+
+after_success:
+  - coveralls 
+
