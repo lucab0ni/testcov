@@ -1,0 +1,9 @@
+
+*.txt~
+
+build/CMakeCache.txt
+
+build/*
+
+
+.gitignore~
