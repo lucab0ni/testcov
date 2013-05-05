@@ -10,5 +10,5 @@ script:
   - cmake . && make && ./prog1
 
 after_success:
-  - coveralls 
+  - coveralls --verbose
 
