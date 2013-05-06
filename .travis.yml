@@ -7,7 +7,10 @@ before_install:
   - sudo pip install cpp-coveralls --use-mirrors
 
 script:
-  - cmake . && make && ./prog1 && ls -l && ls -l CMakeFiles/
+  - cmake . && make && ./prog1 
+  - gcc -coverage -o prog2 prog1.cpp && ./prog2
+  - ls -l && ls -l CMakeFiles/ && ls -l CMakeFiles/prog1.dir
+   
 
 after_success:
   - coveralls --verbose 
