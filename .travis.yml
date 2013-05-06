@@ -8,7 +8,7 @@ before_install:
 
 script:
   - cmake . && make && ./prog1 
-  - g++ -coverage -o prog2 ../prog1.cpp && ./prog2 
+  - g++ -coverage -o prog2 prog1.cpp && ./prog2 
   - ls -l && ls -l CMakeFiles/ && ls -l CMakeFiles/prog1.dir
    
 
