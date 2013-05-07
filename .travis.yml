@@ -14,6 +14,7 @@ script:
   - ./prog1
   - ls -l
   - ls -al CMakeFiles/prog1.dir  
+  - head CMakeFiles/prog1.dir/prog1.cpp.gcno
 
 after_success:
   - coveralls --verbose
