@@ -11,8 +11,10 @@ before_install:
   - cd ..
 
 script:
-  - g++ -g -O0 -coverage -o prog1 prog1.cpp && ./prog1
+  - mkdir aa && cd aa
+  - g++ -g -O0 -coverage -o prog1 ../prog1.cpp && ./prog1
   - ls -l 
+  - cd ..
    
 
 after_success:
