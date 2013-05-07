@@ -7,10 +7,9 @@ before_install:
   - sudo pip install cpp-coveralls --use-mirrors
 
 script:
-  - cmake . && make && ./prog1 
-  - g++ -g -O0 -coverage -o prog2 prog1.cpp && ./prog2 
+  - g++ -g -O0 -coverage -o prog1 prog1.cpp && ./prog1
   - ls -l && ls -l CMakeFiles/ && ls -l CMakeFiles/prog1.dir
    
 
 after_success:
-  - coveralls --verbose 
+  - coveralls --verbose --exclude CMakeFiles/CompilerIdC/
