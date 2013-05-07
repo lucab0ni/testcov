@@ -8,8 +8,8 @@ before_install:
 
 script:
   - g++ -g -O0 -coverage -o prog1 prog1.cpp && ./prog1
-  - ls -l && ls -l CMakeFiles/ && ls -l CMakeFiles/prog1.dir
+  - ls -l 
    
 
 after_success:
-  - coveralls --verbose --exclude CMakeFiles/CompilerIdC/
+  - coveralls --verbose
