@@ -13,6 +13,7 @@ script:
   - cmake . && make 
   - ./prog1
   - ls -l
-   
+  - ls -al CMakeFiles/prog1.dir  
+
 after_success:
   - coveralls --verbose
