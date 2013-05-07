@@ -8,6 +8,7 @@ before_install:
   - cd cpp-coveralls
   - git checkout out_source_build
   - sudo python setup.py install
+  - cd ..
 
 script:
   - g++ -g -O0 -coverage -o prog1 prog1.cpp && ./prog1
