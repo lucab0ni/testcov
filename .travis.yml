@@ -12,6 +12,7 @@ before_install:
 script:
   - cmake . && make 
   - ./prog1
+  - ls -l
    
 
 after_success:
