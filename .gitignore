@@ -11,3 +11,9 @@ build/*
 .#CMakeLists.txt
 
 *.yml~
+
+*.gcda
+
+*.gcno
+
+prog2
