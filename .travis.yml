@@ -4,7 +4,10 @@ compiler:
   - gcc
 
 before_install:
-  - sudo pip install cpp-coveralls --use-mirrors
+  - git clone https://github.com/eddyxu/cpp-coveralls.git
+  - cd cpp-coveralls
+  - git checkout out_source_build
+  - sudo python setup.py install
 
 script:
   - g++ -g -O0 -coverage -o prog1 prog1.cpp && ./prog1
