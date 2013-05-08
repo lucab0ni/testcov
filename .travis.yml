@@ -14,8 +14,8 @@ script:
   - ./prog1
   - ls -l
   - ls -al CMakeFiles/prog1.dir  
-  - gcov -o CMakeFiles/prog1.dir/prog1.cpp.o x
-  - ls -al   
+#  - gcov -o CMakeFiles/prog1.dir/prog1.cpp.o x
+#  - ls -al   
 
 after_success:
   - coveralls --verbose
