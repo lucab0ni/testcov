@@ -11,11 +11,11 @@ before_install:
 
 script:
   - cmake . && make 
-  - ./prog1
   - ls -l
 #  - ls -al CMakeFiles/prog1.dir  
 #  - gcov -o CMakeFiles/prog1.dir/prog1.cpp.o x
 #  - ls -al   
 
 after_success:
+  - make test
   - coveralls --verbose
