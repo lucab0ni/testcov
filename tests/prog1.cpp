@@ -1,7 +1,7 @@
 #include <iostream>
 #include "includes/hop.h"
 
-void f()
+void ff()
 {
   int a=12;
 }
@@ -9,6 +9,7 @@ void f()
 int main()
 {
   std::cout << "Hello World"<<std::endl;
+
 
   f();
   g();
