@@ -1,4 +1,6 @@
 
+void ff()
+{}
 
 void g()
 {
