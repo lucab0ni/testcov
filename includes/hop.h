@@ -1,5 +1,5 @@
 
-void ff()
+void f()
 {}
 
 void g()

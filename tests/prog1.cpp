@@ -1,7 +1,7 @@
 #include <iostream>
 #include "includes/hop.h"
 
-void ff()
+void fff()
 {
   int a=12;
 }
