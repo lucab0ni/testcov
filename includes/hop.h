@@ -4,6 +4,8 @@ void f()
 
 void g()
 {
+
+  //Im going eèàèàéàà§àà'àà
   std::cout<< " hip "<< std::endl;
 }
 
