@@ -4,7 +4,7 @@ compiler:
   - gcc
 
 before_install:
-  - git clone https://github.com/dcoeurjo/cpp-coveralls.git
+  - git clone https://github.com/eddyxu/cpp-coveralls.git
   - cd cpp-coveralls
   - sudo python setup.py install
   - cd ..
