@@ -4,10 +4,11 @@ compiler:
   - gcc
 
 before_install:
+  - sudo apt-get install -qq g++-4.8
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 40 --slave /usr/bin/g++ g++ /usr/bin/g++-4.8 --slave /usr/bin/gcov gcov /usr/bin/gcov-4.8
+  - sudo update-alternatives --set gcc /usr/bin/gcc-4.8
+  - sudo pip install cpp-coveralls --use-mirrors
   - git clone https://github.com/dcoeurjo/cpp-coveralls.git
-  - cd cpp-coveralls
-  - sudo python setup.py install
-  - cd ..
 
 script:
   - cmake . && make 
